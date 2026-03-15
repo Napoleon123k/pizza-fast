@@ -1,0 +1,178 @@
+body{
+
+margin:0;
+font-family:Arial;
+background:#111;
+color:white;
+
+}
+
+/* HEADER */
+
+header{
+
+background:#000;
+border-bottom:4px solid red;
+padding:20px;
+text-align:center;
+
+}
+
+h1{
+
+color:#ff2b2b;
+font-size:40px;
+text-shadow:0 0 10px red;
+
+}
+
+/* MENU */
+
+nav{
+
+margin-top:10px;
+
+}
+
+nav a{
+
+color:white;
+margin:10px;
+text-decoration:none;
+background:#222;
+padding:10px 20px;
+border-radius:6px;
+transition:0.3s;
+
+}
+
+nav a:hover{
+
+background:red;
+
+}
+
+/* SECCIONES */
+
+section{
+
+margin:40px;
+padding:30px;
+border:2px solid red;
+border-radius:12px;
+background:rgba(0,0,0,0.7);
+
+}
+
+h2{
+
+color:#ff2b2b;
+text-align:center;
+
+}
+
+/* PIZZAS */
+
+.contenedor-pizzas{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+
+}
+
+.pizza{
+
+background:#111;
+border-radius:12px;
+padding:10px;
+transition:0.3s;
+
+}
+
+.pizza:hover{
+
+transform:scale(1.05);
+box-shadow:0 0 15px red;
+
+}
+
+.pizza img{
+
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:10px;
+
+}
+
+/* FORMULARIO */
+
+form{
+
+display:flex;
+flex-direction:column;
+gap:10px;
+max-width:400px;
+margin:auto;
+
+}
+
+input, textarea{
+
+padding:10px;
+border:none;
+border-radius:5px;
+
+}
+
+button{
+
+background:red;
+color:white;
+border:none;
+padding:10px;
+border-radius:5px;
+
+}
+
+footer{
+
+text-align:center;
+padding:20px;
+background:#000;
+margin-top:40px;
+
+}
+/* CELULAR */
+
+@media (max-width:768px){
+
+nav{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+nav a{
+display:block;
+}
+
+section{
+margin:15px;
+padding:20px;
+}
+
+h1{
+font-size:28px;
+}
+
+.contenedor-pizzas{
+grid-template-columns:1fr;
+}
+
+.pizza img{
+height:200px;
+}
+
+}
